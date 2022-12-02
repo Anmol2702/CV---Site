@@ -1,0 +1,241 @@
+/* div {
+  background-color: #E4F9F5;
+} */
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999E);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999E);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999E);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999E);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999E);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  color: #40514E;
+  /* the below property is used the center the elemnts inside the parent it is specified
+      this works as long as we have block and inline and block elements and it doesn't have a width set*/
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+/* When the value is 0 we don't need to specify the units like px */
+h1 {
+  /* to make the font size dynamic we can specify it in % and here 100% == 16px so for 90px it would be 562.5% */
+  /* we can also units as em to make it dynamic - 1em = 16px */
+  /* em adds up the fontsize of the parent to the fontsize specified so we can use rem - root em which ignores the
+  font size of the parent */
+  /* font-size: 90px; */
+  /* font-size: 562.5%; */
+  /* font-size: 5.625em; */
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  /* padding-top: 50px; */
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+  /* line-height: 2; */
+  /* width: 10%; */
+  /* Here we specify the right and left margin to auto which centers the h1 element since we have made its width as 10%
+  and is no longer has complete body width */
+  /* margin: 0 auto 0 auto; */
+}
+
+h2 {
+  color: #66BFBF;
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  /* margin-top: 0; */
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0px;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+.contact {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+p {
+  line-height: 2;
+}
+
+.skill_img_1 {
+  width: 25%;
+  /* this property make the img float to the left and text wrapped around it */
+  float: left;
+  margin-right: 30px;
+}
+
+.skill_img_2 {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.intro {
+  width: 30%;
+  margin: auto;
+}
+/* The make the left margin clear so that it doesn't wrap around any thing */
+/* .clear-property {
+  clear: left;
+} */
+
+/* There are three kinds of size specifying elements
+1. Padding : Doesn't increase the height or width specified but increase the over all size of the element and also
+padding is applied to the content inside the div tag but not to the background-color or background-image
+2. Border : It is way to provide the type and the size of border around the div tag
+3. Margin : It is space given around the div tag WRT to other elements around it
+*/
+
+/* CSS - Display Elements
+1. Block Elements : The elements block the other elements to reside beside them and take up the whole width of the screen
+    Ex: p, headers, div, lists and list items, forms
+2. Inline Elements : These element only take up the space required and not block the rest of the space
+    Ex: spans, images, anchors
+    Note: In case of inline elements the width cannot be changed but we can change it by changing the display property to block
+3. Inline-block Elements : In these elements the width can be changed and also it doesn't block the rest of the space beside it
+    Ex: images (kind of) -- their width can be changed and also they allow other elements beside them
+4. None : if we make the display property as none then it is hidden and is not shown in the web page
+    Note : In case of none display property the element is hidden but in case of 'visibility property as hidden'
+    - the space occupied is visible on the webpage but the element is not
+*/
+
+/* Position property
+1. Static - based on the default html rules - all html elements follow the same
+2. Relative - this property is used to move the element relative to its static property using coordinate property
+like - top, bottom, left, right and in case we specify top: 50 px the element will be pushed 50px from the top towards the
+bottom. Note: when we move the element other elements are affected when it is moved they remain intact
+3. Absoulte - adding a margin relative to the position of the body - it also effects the positioning of the other elements
+and the element with Absoulte position property is not in the original flow of html
+4. Fixed - the property makes the elements position fixed even when we scroll through the webpage
+*/
+
+/* Font Family
+1. Monospace - every charcter has equal width and is mostly used to represent code
+2. serif - it is there by deafult
+3. sans-serif - default font is arial
+  Note: Web safe fonts are supposed to be available for most of the users
+
+font-family: Arial,sans-serif - when separated by , this specifies the priority of the font (i.e) if arial is not
+present the browser can display any sans-serif font available
+Note: The above property effects the font of all elements in the body
+
+if we want exactly the same font to be displayed that we want we can use font embeddings (we can get it from google fonts)
+*/
+
+.red{
+  background-color: red;
+  /* position: relative;
+  left: 200px; */
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 200px;
+  top: 200px;
+}
+
+.blue{
+  background-color: blue;
+  /* position: relative;
+  bottom: 100px; */
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+
+.yellow{
+  background-color: yellow;
+  /* position: relative;
+  left: 100px;
+  bottom: 200px; */
+  height: 100px;
+  width: 100px;
+  position: absolute;
+}
+
+.data{
+  text-decoration: underline;
+}
+
+.top-contianer {
+  background-color: #E4F9F5;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
